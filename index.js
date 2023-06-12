@@ -387,24 +387,3 @@ run().catch(console.dir);
 app.listen(port, () => {
     console.log(`Music server is Running on port ${port}`);
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-            // // update instructors sells class
-            // const filter = { instructorsEmail: savedDoc.instructorEmail }
-            // const options = { upsert: true };
-            // const pInstructorsDoc = {
-            //     instructorsEmail: savedDoc.instructorEmail,
-            //     classSell: 1,
-            // }
-            // const result3 = await popularInstructorsCollection.updateOne(filter, pInstructorsDoc , options)
