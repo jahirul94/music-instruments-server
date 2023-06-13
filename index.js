@@ -145,7 +145,7 @@ async function run() {
             }
         })
 //   github problem
-        app.get("/feedback", verifyJWT, verifyStudent , async (req, res) => {
+        app.get("/feedback", verifyJWT, verifyInstructor , async (req, res) => {
             const result = await feedbackCollection.find().toArray();
             res.send(result)
         })
